@@ -1,0 +1,6 @@
+com\illusiontour\framework\custom\config\WebMvcConfiguration.class
+com\illusiontour\framework\web\service\SysPermissionService.class
+com\illusiontour\framework\custom\config\Knife4jConfiguration.class
+com\illusiontour\framework\custom\converter\StringToBaseEnumConverterFactory$1.class
+com\illusiontour\framework\custom\converter\StringToBaseEnumConverterFactory.class
+com\illusiontour\framework\custom\interceptor\AuthenticationInterceptor.class
