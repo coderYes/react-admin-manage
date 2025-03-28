@@ -4,33 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8de19e30-ffa1-4033-a84d-5dee2b3f604d" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/illusiontour-admin/src/main/java/com/illusiontour/admin/controller/system/SysRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysRoleMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysRoleMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-admin/src/main/java/com/illusiontour/admin/controller/system/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-admin/src/main/java/com/illusiontour/admin/controller/system/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-admin/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-admin/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-admin/target/classes/com/illusiontour/admin/controller/system/SysUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-admin/target/classes/com/illusiontour/admin/controller/system/SysUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysRoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysRoleMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysUserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-framework/src/main/java/com/illusiontour/framework/web/service/SysPermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-framework/src/main/java/com/illusiontour/framework/web/service/SysPermissionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysUserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysUserRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysMenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/impl/SysRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysUserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysUserRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/mapper/SysRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/mapper/SysRoleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/SysRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/SysRoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/impl/SysRoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/impl/SysRoleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysUserMapper.xml" afterDir="false" />
+    <list default="true" id="8de19e30-ffa1-4033-a84d-5dee2b3f604d" name="更改" comment="角色模块开发">
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysRoleMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysRoleMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysUserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysUserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-framework/target/classes/com/illusiontour/framework/web/service/SysPermissionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-framework/target/classes/com/illusiontour/framework/web/service/SysPermissionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/mapper/SysUserRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/mapper/SysUserRoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysUserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysUserRoleMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,12 +137,25 @@
       <workItem from="1742033662033" duration="6145000" />
       <workItem from="1742171530581" duration="13955000" />
       <workItem from="1742267484221" duration="33645000" />
-      <workItem from="1742807693563" duration="23910000" />
+      <workItem from="1742807693563" duration="24280000" />
     </task>
+    <task id="LOCAL-00001" summary="角色模块开发">
+      <option name="closed" value="true" />
+      <created>1743126299240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743126299240</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="角色模块开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="角色模块开发" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
