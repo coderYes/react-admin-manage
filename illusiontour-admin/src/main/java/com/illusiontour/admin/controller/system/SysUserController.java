@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Tag(name = "全景后台管理系统用户管理")
 @RestController
-@RequestMapping("/system")
+@RequestMapping("/system/user")
 public class SysUserController extends BaseController {
     @Autowired
     private SysUserService sysUserService;
@@ -28,8 +28,15 @@ public class SysUserController extends BaseController {
     @Autowired
     private SysRoleService sysRoleService;
 
+    @Operation(summary = "根据用户ID获取详细信息")
+    @GetMapping("/info/{userId}")
+    public Result<SysUser> info(@PathVariable Long userId) {
+        sysUserService.checkUserDataScope(userId);
+        return Result.success(sysUserService.selectUserById(userId));
+    }
+
     @Operation(summary = "获取用户列表")
-    @GetMapping("/user/list")
+    @GetMapping("/list")
     public Result<IPage<SysUser>> list(@RequestParam long current, @RequestParam long size, SysUser sysUser) {
         IPage<SysUser> page = new Page<>(current, size);
         IPage<SysUser> sysUserIPage = sysUserService.selectUserList(page, sysUser);
@@ -37,7 +44,7 @@ public class SysUserController extends BaseController {
     }
 
     @Operation(summary = "用户创建")
-    @PostMapping("/user/add")
+    @PostMapping("/add")
     public Result<Integer> add(@RequestBody SysUser sysUser) {
         sysRoleService.checkRoleDataScope(sysUser.getRoleIds());
         if (StringUtils.isNull(sysUser.getNickName())) {
@@ -57,7 +64,7 @@ public class SysUserController extends BaseController {
     }
 
     @Operation(summary = "用户删除")
-    @DeleteMapping("/user/delete/{userIds}")
+    @DeleteMapping("/delete/{userIds}")
     public Result<Integer> delete(@PathVariable Long[] userIds) {
         if (ArrayUtils.contains(userIds, getUserId())) {
             return Result.fail("当前用户不能删除");
@@ -66,7 +73,7 @@ public class SysUserController extends BaseController {
     }
 
     @Operation(summary = "用户编辑")
-    @PutMapping("/user/edit")
+    @PutMapping("/edit")
     public Result<Integer> edit(@RequestBody SysUser sysUser) {
         sysUserService.checkUserAllowed(sysUser);
         sysUserService.checkUserDataScope(sysUser.getId());

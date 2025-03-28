@@ -13,17 +13,10 @@ import lombok.Data;
 @TableName(value ="sys_role_menu")
 @Data
 public class SysRoleMenu {
-    /**
-     * 角色ID
-     */
+
     @Schema(description = "角色ID")
-    @TableId
     private Long roleId;
 
-    /**
-     * 菜单ID
-     */
     @Schema(description = "菜单ID")
-    @TableId
     private Long menuId;
 }

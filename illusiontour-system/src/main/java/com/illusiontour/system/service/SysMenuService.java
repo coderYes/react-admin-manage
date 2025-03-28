@@ -12,5 +12,12 @@ import java.util.Set;
  * @createDate 2025-03-07 11:12:20
  */
 public interface SysMenuService extends IService<SysMenu> {
-    public Set<String> selectRolePermissionByUserId(Long userId);
+    /**
+     * 根据用户ID查询权限
+     *
+     * @param userId 用户ID
+     * @return 权限列表
+     */
+    Set<String> selectRolePermissionByUserId(Long userId);
+
 }

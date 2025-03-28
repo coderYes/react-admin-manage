@@ -51,7 +51,6 @@
     <select id="selectUserById" resultMap="SysUserResult">
         select id,
                dept_id,
-               open_id,
                user_name,
                nick_name,
                user_type,

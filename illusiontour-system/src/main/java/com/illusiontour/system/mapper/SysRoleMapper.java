@@ -1,7 +1,9 @@
 package com.illusiontour.system.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.illusiontour.common.core.domain.entity.SysRole;
+import com.illusiontour.common.core.domain.entity.SysUser;
 import com.illusiontour.common.core.domain.entity.SysUserRole;
 
 import java.util.List;
@@ -16,9 +18,22 @@ public interface SysRoleMapper extends BaseMapper<SysRole> {
 
     List<SysRole> selectRoleKeysByUserId(Long userId);
 
-    List<SysRole> selectRoleList(SysRole role);
+    IPage<SysRole> selectRoleList(IPage<SysRole> page, SysRole sysRole);
 
     int batchUserRole(List<SysUserRole> userRoleList);
+
+    SysRole selectRoleById(Long roleId);
+
+    SysRole checkRoleNameUnique(String roleName);
+
+    SysRole checkRoleKeyUnique(String roleKey);
+
+    int insertRole(SysRole role);
+
+    int updateRole(SysRole role);
+
+    int deleteRoleByIds(Long[] roleIds);
+
 }
 
 

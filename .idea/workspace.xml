@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8de19e30-ffa1-4033-a84d-5dee2b3f604d" name="更改" comment="" />
+    <list default="true" id="8de19e30-ffa1-4033-a84d-5dee2b3f604d" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/illusiontour-admin/src/main/java/com/illusiontour/admin/controller/system/SysRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysRoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysRoleMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-admin/src/main/java/com/illusiontour/admin/controller/system/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-admin/src/main/java/com/illusiontour/admin/controller/system/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-admin/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-admin/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-admin/target/classes/com/illusiontour/admin/controller/system/SysUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-admin/target/classes/com/illusiontour/admin/controller/system/SysUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysRoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysRoleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysUserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-framework/src/main/java/com/illusiontour/framework/web/service/SysPermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-framework/src/main/java/com/illusiontour/framework/web/service/SysPermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysUserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysUserRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysUserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysUserRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/mapper/SysRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/mapper/SysRoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/SysRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/SysRoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/impl/SysRoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/impl/SysRoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysUserMapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +45,9 @@
         <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -33,6 +63,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2rkYzpH1GYrw179yNiAkED7Ql3L" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -45,15 +78,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "E:/project/illusiontour-manage/illusiontour-system/src/main/resources/mapper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   },
@@ -120,6 +156,7 @@
       <workItem from="1742033662033" duration="6145000" />
       <workItem from="1742171530581" duration="13955000" />
       <workItem from="1742267484221" duration="33645000" />
+      <workItem from="1742807693563" duration="23910000" />
     </task>
     <servers />
   </component>

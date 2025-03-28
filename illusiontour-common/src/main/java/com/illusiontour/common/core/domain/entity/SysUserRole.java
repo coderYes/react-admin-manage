@@ -15,15 +15,9 @@ import lombok.Data;
 @TableName(value ="sys_user_role")
 @Data
 public class SysUserRole {
-    /**
-     * 用户ID
-     */
     @Schema(description = "用户ID")
     private Long userId;
 
-    /**
-     * 角色ID
-     */
     @Schema(description = "角色ID")
     private Long roleId;
 

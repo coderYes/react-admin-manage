@@ -15,41 +15,39 @@ import lombok.Data;
 @Data
 public class SysRole extends BaseEntity {
 
-    /**
-     * 主键
-     */
     @Schema(description = "主键")
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    /**
-     * 角色名称
-     */
     @Schema(description = "角色名称")
     private String roleName;
 
-    /**
-     * 角色权限字符串
-     */
     @Schema(description = "角色权限字符串")
     private String roleKey;
 
-    /**
-     * 显示顺序
-     */
     @Schema(description = "显示顺序")
     private Integer roleSort;
 
-    /**
-     * 角色状态（0正常 1停用）
-     */
     @Schema(description = "角色状态（0正常 1停用）")
     private String status;
 
-    /**
-     * 备注
-     */
     @Schema(description = "备注")
     private String remark;
+
+    @Schema(description = "菜单组")
+    private Long[] menuIds;
+
+    public boolean isAdmin() {
+        return isAdmin(this.getId());
+    }
+
+    public static boolean isAdmin(Long roleId) {
+        return roleId != null && 1L == roleId;
+    }
+
+    public SysRole(Long id)
+    {
+        this.id = id;
+    }
 
 }
