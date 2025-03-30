@@ -4,7 +4,6 @@ package com.illusiontour.system.service;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.illusiontour.common.core.domain.entity.SysRole;
-import com.illusiontour.common.core.domain.entity.SysUser;
 
 import java.util.List;
 import java.util.Set;

@@ -8,10 +8,11 @@ import lombok.Data;
 
 /**
  * 角色信息表
+ *
  * @TableName sys_role
  */
 @Schema(description = "角色信息表")
-@TableName(value ="sys_role")
+@TableName(value = "sys_role")
 @Data
 public class SysRole extends BaseEntity {
 
@@ -45,8 +46,10 @@ public class SysRole extends BaseEntity {
         return roleId != null && 1L == roleId;
     }
 
-    public SysRole(Long id)
-    {
+    public SysRole() {
+    }
+
+    public SysRole(Long id) {
         this.id = id;
     }
 

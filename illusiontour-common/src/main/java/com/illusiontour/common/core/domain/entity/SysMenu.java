@@ -1,10 +1,11 @@
 package com.illusiontour.common.core.domain.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 菜单权限表
@@ -21,7 +22,7 @@ public class SysMenu extends BaseEntity {
     private String menuName;
 
     @Schema(description = "父菜单ID")
-    private String parentId;
+    private Long parentId;
 
     @Schema(description = "显示顺序")
     private Integer orderNum;
@@ -58,5 +59,13 @@ public class SysMenu extends BaseEntity {
 
     @Schema(description = "备注")
     private String remark;
+
+    @Schema(description = "子菜单")
+    private List<SysMenu> children = new ArrayList<SysMenu>();
+
+    public void setChildren(List<SysMenu> children)
+    {
+        this.children = children;
+    }
 
 }

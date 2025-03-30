@@ -1,6 +1,7 @@
 package com.illusiontour.common.core.domain.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.illusiontour.common.exception.TourException;
@@ -16,6 +17,7 @@ import java.util.Map;
 @Data
 public class BaseEntity implements Serializable {
     @Schema(description = "创建时间")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @TableField(value = "create_time", fill = FieldFill.INSERT) //自动填充字段，配置时机，插入数据时填充。
     private Date createTime;
 
@@ -24,6 +26,7 @@ public class BaseEntity implements Serializable {
     private String createBy;
 
     @Schema(description = "更新时间")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @TableField(value = "update_time", fill = FieldFill.UPDATE) //自动填充字段，配置时机，更新数据时填充
     private Date updateTime;
 

@@ -5,12 +5,11 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.illusiontour.common.core.controller.BaseController;
 import com.illusiontour.common.core.domain.entity.SysRole;
 import com.illusiontour.common.result.Result;
-import com.illusiontour.framework.web.service.SysPermissionService;
 import com.illusiontour.system.service.SysRoleService;
-import com.illusiontour.system.service.SysUserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @Tag(name = "全景后台管理系统角色管理")
@@ -20,18 +19,12 @@ public class SysRoleController extends BaseController {
     @Autowired
     private SysRoleService sysRoleService;
 
-    @Autowired
-    private SysUserService sysUserService;
-
-    @Autowired
-    private SysPermissionService sysPermissionService;
-
     @Operation(summary = "获取角色列表")
     @GetMapping("/list")
     public Result<IPage<SysRole>> list(@RequestParam long current, @RequestParam long size, SysRole sysRole) {
         IPage<SysRole> page = new Page<>(current, size);
-        IPage<SysRole> sysUserIPage = sysRoleService.selectRoleList(page, sysRole);
-        return Result.success(sysUserIPage);
+        IPage<SysRole> sysRoleIPage = sysRoleService.selectRoleList(page, sysRole);
+        return Result.success(sysRoleIPage);
     }
 
     @Operation(summary = "根据角色ID获取详细信息")
@@ -55,7 +48,7 @@ public class SysRoleController extends BaseController {
 
     @Operation(summary = "角色修改")
     @PutMapping("/edit")
-    public Result<Integer> edit(@RequestBody SysRole sysRole) {
+    public Result<Integer> edit(@Validated @RequestBody SysRole sysRole) {
         sysRoleService.checkRoleAllowed(sysRole);
         sysRoleService.checkRoleDataScope(sysRole.getId());
         if (!sysRoleService.checkRoleNameUnique(sysRole)) {

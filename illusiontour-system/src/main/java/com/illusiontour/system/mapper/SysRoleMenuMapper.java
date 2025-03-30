@@ -13,4 +13,6 @@ public interface SysRoleMenuMapper extends BaseMapper<SysRoleMenu> {
     int deleteRoleMenuByRoleId(Long roleId);
 
     int deleteRoleMenu(Long[] ids);
+
+    int checkMenuExistRole(Long menuId);
 }

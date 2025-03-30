@@ -175,6 +175,13 @@ public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole>
         return insertRoleMenu(role);
     }
 
+
+    /**
+     * 批量删除角色信息
+     *
+     * @param roleIds 需要删除的角色ID
+     * @return 结果
+     */
     @Override
     @Transactional
     public int deleteRoleByIds(Long[] roleIds) {
@@ -196,7 +203,6 @@ public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole>
      *
      * @param role 角色对象
      */
-
     public int insertRoleMenu(SysRole role) {
         int rows = 1;
         // 新增用户与角色管理
