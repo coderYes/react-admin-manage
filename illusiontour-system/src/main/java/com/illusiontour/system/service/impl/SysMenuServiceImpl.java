@@ -3,9 +3,13 @@ package com.illusiontour.system.service.impl;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.illusiontour.common.constant.UserConstants;
 import com.illusiontour.common.core.domain.entity.SysMenu;
 import com.illusiontour.common.core.domain.entity.SysUser;
+import com.illusiontour.common.utils.SecurityUtils;
 import com.illusiontour.common.utils.StringUtils;
+import com.illusiontour.system.domain.vo.MetaVo;
+import com.illusiontour.system.domain.vo.RouterVo;
 import com.illusiontour.system.mapper.SysRoleMenuMapper;
 import com.illusiontour.system.service.SysMenuService;
 import com.illusiontour.system.mapper.SysMenuMapper;
@@ -84,6 +88,43 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu>
     @Override
     public List<Long> selectMenuListByRoleId(Long roleId) {
         return sysMenuMapper.selectMenuListByRoleId(roleId);
+    }
+
+    /**
+     * 根据父节点的ID获取所有子节点
+     *
+     * @param list     分类表
+     * @param parentId 传入的父节点ID
+     * @return String
+     */
+    public List<SysMenu> getChildPerms(List<SysMenu> list, int parentId) {
+        List<SysMenu> returnList = new ArrayList<SysMenu>();
+        for (Iterator<SysMenu> iterator = list.iterator(); iterator.hasNext(); ) {
+            SysMenu t = (SysMenu) iterator.next();
+            // 一、根据传入的某个父节点ID,遍历该父节点的所有子节点
+            if (t.getParentId() == parentId) {
+                recursionFn(list, t);
+                returnList.add(t);
+            }
+        }
+        return returnList;
+    }
+
+    /**
+     * 根据用户ID查询菜单树信息
+     *
+     * @param userId 用户ID
+     * @return 菜单列表
+     */
+    @Override
+    public List<SysMenu> selectMenuTreeByUserId(Long userId) {
+        List<SysMenu> menus = null;
+        if (SecurityUtils.isAdmin(userId)) {
+            menus = sysMenuMapper.selectMenuTreeAll();
+        } else {
+            menus = sysMenuMapper.selectMenuTreeByUserId(userId);
+        }
+        return getChildPerms(menus, 0);
     }
 
     /**
@@ -175,6 +216,34 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu>
             returnList = menus;
         }
         return returnList;
+    }
+
+    /**
+     * 构建前端路由所需要的菜单
+     *
+     * @param menus 菜单列表
+     * @return 路由列表
+     */
+    @Override
+    public List<RouterVo> buildMenus(List<SysMenu> menus) {
+        List<RouterVo> routers = new LinkedList<RouterVo>();
+        for (SysMenu menu : menus) {
+            RouterVo router = new RouterVo();
+            router.setHidden("1".equals(menu.getVisible()));
+            router.setName(StringUtils.convertToCamelCase(menu.getPath()));
+            router.setPath("/" + menu.getPath());
+            router.setComponent(menu.getComponent());
+            router.setQuery(menu.getQuery());
+            router.setMenuType(menu.getMenuType());
+            router.setMeta(new MetaVo(menu.getMenuName(), menu.getIcon(), menu.getIsCache() == 1, menu.getPath()));
+            List<SysMenu> cMenus = menu.getChildren();
+            if (StringUtils.isNotEmpty(cMenus) && UserConstants.TYPE_DIR.equals(menu.getMenuType())) {
+                router.setChildren(buildMenus(cMenus));
+            }
+            routers.add(router);
+
+        }
+        return routers;
     }
 
     /**

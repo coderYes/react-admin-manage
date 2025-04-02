@@ -22,7 +22,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String token = request.getHeader("access-token");
+        String token = request.getHeader("Authorization");
 
         // 解析该token，如果成功则放行，如果失败，则拦截。因为在parseToken中抛出异常，所以这里不需要显式拦截。
         Claims claims = JwtUtil.parseToken(token);

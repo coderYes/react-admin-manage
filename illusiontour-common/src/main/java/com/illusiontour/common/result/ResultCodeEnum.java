@@ -40,8 +40,8 @@ public enum ResultCodeEnum {
     APP_ACCOUNT_DISABLED_ERROR(507, "该用户已被禁用"),
 
 
-    TOKEN_EXPIRED(601, "token过期"),
-    TOKEN_INVALID(602, "token非法");
+    TOKEN_EXPIRED(401, "token过期"),
+    TOKEN_INVALID(401, "token非法");
 
 
     private final Integer code;

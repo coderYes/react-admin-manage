@@ -128,7 +128,7 @@
         where id = #{id}
     </update>
 
-    <delete id="deleteRoleByIds" parameterType="Long">
+    <delete id="deleteRoleByIds" parameterType="java.lang.Long">
         update sys_role set is_deleted = 1 where role_id in
         <foreach collection="array" item="roleId" open="(" separator="," close=")">
             #{roleId}

@@ -33,6 +33,10 @@ public interface SysMenuMapper extends BaseMapper<SysMenu> {
     int hasChildByMenuId(Long menuId);
 
     int deleteMenuById(Long menuId);
+
+    List<SysMenu> selectMenuTreeAll();
+
+    List<SysMenu> selectMenuTreeByUserId(Long userId);
 }
 
 

@@ -1,30 +1,38 @@
 package com.illusiontour.admin.controller.system;
 
+import com.illusiontour.common.core.controller.BaseController;
+import com.illusiontour.common.core.domain.entity.SysMenu;
 import com.illusiontour.common.core.domain.entity.SysUser;
 import com.illusiontour.common.core.domain.modal.CaptchaVo;
 import com.illusiontour.common.core.domain.modal.LoginVo;
 import com.illusiontour.common.login.LoginUserHolder;
 import com.illusiontour.common.result.Result;
 import com.illusiontour.framework.web.service.SysPermissionService;
+import com.illusiontour.system.domain.vo.RouterVo;
 import com.illusiontour.system.service.SysLoginService;
+import com.illusiontour.system.service.SysMenuService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 @Tag(name = "全景后台管理系统登录管理")
 @RestController
 @RequestMapping("")
-public class SysLoginController {
+public class SysLoginController extends BaseController {
     @Autowired
     private SysLoginService sysLoginService;
 
     @Autowired
     private SysPermissionService sysPermissionService;
+
+    @Autowired
+    private SysMenuService sysMenuService;
 
     @Operation(summary = "获取图形验证码")
     @GetMapping("/captcha")
@@ -55,6 +63,14 @@ public class SysLoginController {
         userInfoMap.put("permissions", perms);
 
         return Result.success(userInfoMap);
+    }
+
+    @Operation(summary = "获取路由信息")
+    @GetMapping("/system/getRouters")
+    public Result<List<RouterVo>> getRouters() {
+        Long userId = getUserId();
+        List<SysMenu> menus = sysMenuService.selectMenuTreeByUserId(userId);
+        return Result.success(sysMenuService.buildMenus(menus));
     }
 
 }

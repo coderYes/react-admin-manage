@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
@@ -51,7 +52,6 @@ public class SysUser extends BaseEntity {
     private String avatar;
 
     @Schema(description = "密码")
-    @TableField(value = "password", select = false)
     private String password;
 
     @Schema(description = "帐号状态（0停用 1正常）")
@@ -69,6 +69,7 @@ public class SysUser extends BaseEntity {
     @Schema(description = "角色组")
     private Long[] roleIds;
 
+    @JsonIgnore
     public boolean isAdmin() {
         return isAdmin(this.getId());
     }

@@ -120,6 +120,9 @@ public class SysLoginServiceImpl implements SysLoginService {
             throw new TourException(ResultCodeEnum.ADMIN_ACCOUNT_ERROR);//密码错误异常。
         }
 
+        // 将密码字段设置为 null
+        sysUser.setPassword(null);
+
         return sysUser;
     }
 

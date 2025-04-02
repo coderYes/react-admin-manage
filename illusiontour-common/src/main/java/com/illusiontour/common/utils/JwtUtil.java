@@ -14,6 +14,7 @@ import java.util.Set;
 
 public class JwtUtil {
     private static final long tokenExpiration = 60 * 60 * 24 * 7 * 1000L;
+    private static final String BEARER_PREFIX = "Bearer ";
     private static final SecretKey tokenSignKey = Keys.hmacShaKeyFor("M0PKKI6pYGVWWfDZw90a0lTpGYX1d4AQ".getBytes());
 
     public static String createToken(SysUser sysUser, Set<String> perms) throws JsonProcessingException {
@@ -34,6 +35,10 @@ public class JwtUtil {
     public static Claims parseToken(String token) {
         if (token == null) {
             throw new TourException(ResultCodeEnum.ADMIN_LOGIN_AUTH);
+        }
+        // 去除 Bearer 前缀
+        if (token.startsWith(BEARER_PREFIX)) {
+            token = token.substring(BEARER_PREFIX.length());
         }
         try {
             //jwt解析器

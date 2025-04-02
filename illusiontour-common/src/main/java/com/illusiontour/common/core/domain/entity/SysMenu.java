@@ -40,7 +40,7 @@ public class SysMenu extends BaseEntity {
     private Integer isFrame;
 
     @Schema(description = "是否缓存（0缓存 1不缓存）")
-    private Integer isCache;
+    private int isCache;
 
     @Schema(description = "菜单类型（M目录 C菜单 F按钮）")
     private String menuType;
