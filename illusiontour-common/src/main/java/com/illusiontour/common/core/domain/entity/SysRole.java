@@ -1,8 +1,7 @@
 package com.illusiontour.common.core.domain.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
@@ -37,6 +36,12 @@ public class SysRole extends BaseEntity {
 
     @Schema(description = "菜单组")
     private Long[] menuIds;
+
+    @Schema(description = "逻辑删除")
+    @TableField("is_deleted")
+    @TableLogic //标记逻辑删除字段，使用MyBatis Plus的删除方法时，逻辑删除会自动生效。会将该字段更新为1，而不是实际删除记录。
+    @JsonIgnore //标记序列化被忽略的字段
+    private Byte isDeleted;
 
     public boolean isAdmin() {
         return isAdmin(this.getId());

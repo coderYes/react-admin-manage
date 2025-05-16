@@ -5,34 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8de19e30-ffa1-4033-a84d-5dee2b3f604d" name="更改" comment="角色模块开发">
-      <change afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/constant/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/constant/UserConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/domain/vo/MetaVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/domain/vo/RouterVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-admin/src/main/java/com/illusiontour/admin/controller/system/SysDictDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-admin/src/main/java/com/illusiontour/admin/controller/system/SysDictTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/constant/CacheConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysDictData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/redis/RedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/utils/DictUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysDictDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysDictDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/impl/SysDictDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysDictDataMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/840be2c8-1337-4a9a-96de-81590f5680aa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/840be2c8-1337-4a9a-96de-81590f5680aa/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/840be2c8-1337-4a9a-96de-81590f5680aa/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/840be2c8-1337-4a9a-96de-81590f5680aa/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/840be2c8-1337-4a9a-96de-81590f5680aa/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-admin/src/main/java/com/illusiontour/admin/controller/system/SysLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-admin/src/main/java/com/illusiontour/admin/controller/system/SysLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-admin/target/classes/com/illusiontour/admin/controller/system/SysLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-admin/target/classes/com/illusiontour/admin/controller/system/SysLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysRole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/core/domain/entity/SysUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/result/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/result/ResultCodeEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/utils/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/result/ResultCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/result/ResultCodeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/utils/spring/SpringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/src/main/java/com/illusiontour/common/utils/spring/SpringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/core/domain/entity/SysUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/utils/JwtUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-framework/src/main/java/com/illusiontour/framework/custom/interceptor/AuthenticationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-framework/src/main/java/com/illusiontour/framework/custom/interceptor/AuthenticationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-framework/target/classes/com/illusiontour/framework/custom/interceptor/AuthenticationInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-framework/target/classes/com/illusiontour/framework/custom/interceptor/AuthenticationInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/mapper/SysMenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/SysMenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/impl/SysLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/impl/SysLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/utils/spring/SpringUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-common/target/classes/com/illusiontour/common/utils/spring/SpringUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/java/com/illusiontour/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/mapper/SysMenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/mapper/SysMenuMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/SysMenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/SysMenuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/impl/SysLoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/impl/SysLoginServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/impl/SysMenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/com/illusiontour/system/service/impl/SysMenuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysRoleMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysRoleMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysUserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/illusiontour-system/target/classes/mapper/SysUserRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +56,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/illusiontour-system/src/main/resources/mapper/SysDictTypeMapper.xml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,36 +80,37 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/project/illusiontour-manage/illusiontour-system/src/main/resources/mapper",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/project/illusiontour-manage/illusiontour-system/src/main/resources/mapper&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -159,7 +169,24 @@
       <workItem from="1742171530581" duration="13955000" />
       <workItem from="1742267484221" duration="33645000" />
       <workItem from="1742807693563" duration="33297000" />
-      <workItem from="1743208216209" duration="42367000" />
+      <workItem from="1743208216209" duration="43492000" />
+      <workItem from="1743579011638" duration="592000" />
+      <workItem from="1743579685522" duration="49140000" />
+      <workItem from="1744611808020" duration="7000" />
+      <workItem from="1744618397611" duration="2000" />
+      <workItem from="1744770878002" duration="1000" />
+      <workItem from="1744774573321" duration="594000" />
+      <workItem from="1744793502401" duration="5922000" />
+      <workItem from="1744976752523" duration="29734000" />
+      <workItem from="1746352438034" duration="5000" />
+      <workItem from="1746522522965" duration="202000" />
+      <workItem from="1746587169648" duration="592000" />
+      <workItem from="1746605870603" duration="4000" />
+      <workItem from="1746692084600" duration="597000" />
+      <workItem from="1746699275466" duration="3000" />
+      <workItem from="1747039490872" duration="596000" />
+      <workItem from="1747127605567" duration="83000" />
+      <workItem from="1747362641748" duration="716000" />
     </task>
     <task id="LOCAL-00001" summary="角色模块开发">
       <option name="closed" value="true" />

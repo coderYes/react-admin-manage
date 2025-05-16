@@ -34,7 +34,7 @@ public class JwtUtil {
 
     public static Claims parseToken(String token) {
         if (token == null) {
-            throw new TourException(ResultCodeEnum.ADMIN_LOGIN_AUTH);
+            throw new TourException(ResultCodeEnum.TOKEN_EXPIRED);
         }
         // 去除 Bearer 前缀
         if (token.startsWith(BEARER_PREFIX)) {

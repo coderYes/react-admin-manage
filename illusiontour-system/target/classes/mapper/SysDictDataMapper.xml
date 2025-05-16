@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.illusiontour.system.mapper.SysDictDataMapper">
+
+    <resultMap id="SysDictDataResult" type="com.illusiontour.common.core.domain.entity.SysDictData">
+        <id property="id" column="id"/>
+        <result property="dictCode" column="dict_code"/>
+        <result property="dictLabel" column="dict_label"/>
+        <result property="dictValue" column="dict_value"/>
+        <result property="dictDesc" column="dict_desc"/>
+        <result property="status" column="status"/>
+        <result property="sort" column="sort"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <sql id="selectDictDataVo">
+        select id,
+               dict_code,
+               dict_label,
+               dict_value,
+               dict_desc,
+               status,
+               sort,
+               create_time,
+               create_by,
+               update_by,
+               update_time
+        from sys_dict_data
+    </sql>
+
+    <update id="updateDictDataCode" parameterType="java.lang.String">
+        update sys_dict_data
+        set dict_code = #{newDictCode}
+        where dict_code = #{oldDictCode}
+    </update>
+
+    <select id="selectDictDataByCode" parameterType="java.lang.String" resultMap="SysDictDataResult">
+        <include refid="selectDictDataVo"/>
+        where status = 0 and dict_code = #{dictCode} order by sort asc
+    </select>
+
+    <select id="countDictDataByCode" resultType="java.lang.Integer">
+        select count(1) from sys_dict_data where dict_code=#{dictCode}
+    </select>
+
+    <select id="selectDictDataList" parameterType="com.illusiontour.common.core.domain.entity.SysDictData" resultMap="SysDictDataResult">
+        <include refid="selectDictDataVo"/>
+        <where>
+            <if test="dictCode != null and dictCode != ''">
+                AND dict_code = #{dictCode}
+            </if>
+            <if test="dictLabel != null and dictLabel != ''">
+                AND dict_label like concat('%', #{dictLabel}, '%')
+            </if>
+            <if test="status != null and status != ''">
+                AND status = #{status}
+            </if>
+        </where>
+        order by sort asc
+    </select>
+
+    <delete id="deleteByDictCode" parameterType="java.lang.String">
+        delete
+        from sys_dict_data
+        where dict_code = #{dictCode}
+    </delete>
+
+    <insert id="insertDictData" useGeneratedKeys="true">
+        insert into sys_dict_data(
+        <if test="dictCode != null and dictCode != ''">dict_code,</if>
+        <if test="dictLabel != null and dictLabel != ''">dict_label,</if>
+        <if test="dictValue != null and dictValue != ''">dict_value,</if>
+        <if test="dictDesc != null and dictDesc != ''">dict_desc,</if>
+        <if test="status != null">status,</if>
+        <if test="sort != null">sort,</if>
+        <if test="createBy != null and createBy != ''">create_by,</if>
+        create_time
+        )values(
+        <if test="dictCode != null and dictCode != ''">#{dictCode},</if>
+        <if test="dictLabel != null and dictLabel != ''">#{dictLabel},</if>
+        <if test="dictValue != null and dictValue != ''">#{dictValue},</if>
+        <if test="dictDesc != null and dictDesc != ''">#{dictDesc},</if>
+        <if test="status != null">#{status},</if>
+        <if test="sort != null and sort != ''">#{sort},</if>
+        <if test="createBy != null and createBy != ''">#{createBy},</if>
+        sysdate()
+        )
+    </insert>
+</mapper>

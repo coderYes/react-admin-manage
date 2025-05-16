@@ -231,7 +231,11 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu>
             RouterVo router = new RouterVo();
             router.setHidden("1".equals(menu.getVisible()));
             router.setName(StringUtils.convertToCamelCase(menu.getPath()));
-            router.setPath("/" + menu.getPath());
+
+            String basePath = "/" + menu.getPath();
+            String query = menu.getQuery();
+            router.setPath(query != null && !query.isEmpty() ? basePath + query : basePath);
+
             router.setComponent(menu.getComponent());
             router.setQuery(menu.getQuery());
             router.setMenuType(menu.getMenuType());
